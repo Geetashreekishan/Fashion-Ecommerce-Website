@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> </head>
+<body>
+
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-modal">
+            <span class="close-btn" id="close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <span class="close-btn" id="close-cart">&times;</span>
+            <h2>Your Shopping Bag</h2>
+            <div id="cart-items">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">₹0.00</span></p>
+            </div>
+            <button class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+    <header class="main-header">
+        <nav>
+            <div class="logo">FASHION</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Dresses">Dress</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="login-btn">Login</a>
+                <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Own it. Wear it. Love it.</h1>
+                <p>"My life isn't perfect, but my outfit most definitely is." "Dressing well is a form of self-love and good manners, and I want to showcase that with my style." ....</p>
+                <a href="#Dresses" class="btn">EXPLORE</a>
+            </div>
+        </section>
+
+        <section id="Dresses" class="product-section">
+            <h2>Dresses</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Bodycon" data-price="3000">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2025/APRIL/23/vGGPZPi3_218d5965e97a4d80b0d8df8e9b0e2795.jpg" alt="Bodycon Dress">
+                    <h3>(BODYCON DRESS)</h3>
+                    <h4>"Dress like you're already famous."</h4>
+                    <p>₹3000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Denim" data-price="2000">
+                    <img src="https://www.veromoda.in/cdn/shop/files/295075401_g0.jpg?v=1745710993" alt="Denim Dress">
+                    <h3>(DENIM DRESS)</h3>
+                    <h4>"Denim days are the best days."</h4>
+                    <p>₹2000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Maxi" data-price="1500">
+                    <img src="https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/N73433s.jpg?im=Resize,width=750" alt="Maxi Dress">
+                    <h3>(MAXI DRESS)</h3>
+                    <h4>"Classic can hardly ever go out of style"</h4>
+                    <p>₹1500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Fit & Flare " data-price="1800">
+                    <img src="https://img.tatacliq.com/images/i14/437Wx649H/MP000000019859681_437Wx649H_202310290339251.jpeg" alt="Fit & Flre Dress">
+                    <h3>(FIT & FLARE DRESS)</h3>                    
+                    <h4>"A projection of volume in a silhouette"</h4>
+                    <p>₹1800</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Shirt" data-price="950">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRPgAjTSJWYeDehAO-zZo5VQcU0mXgrcxsDKztW2JPbeGsJ5wIwWOMtQBCnA8ld87jmcTzMkhJr3K7YmN24y5cycuWz2vtq46AhaK-ba7ifX5eXf9hWeFea3w" alt="Shirt Dress">
+                    <h3>(SHIRT DRESS)</h3>
+                    <h4>"Life's too short for boring shirts"</h4>
+                    <p>₹950</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Corset" data-price="2500">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTKhnWvXv1uTxNzonFZ3C0sNsp1Ox5DkHsamq3Tb9dfihx2C9f6lYszeCfWLwB4_WDPcnLBdyDhWWr28NA_qK0SbhxON3-NtuY7cVzNysqq" alt="Corset Dress">
+                    <h3>(CORSET DRESS)</h3>
+                    <h4>"A timeless classic with a modern twist."</h4>
+                    <p>₹2500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Floral" data-price="2800">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZMXgtqu8YVJDzoZsl5CGYVjFBhu7MhtpHw&s" alt="Floral Dress">
+                    <h3>(FLORAL DRESS)</h3>
+                    <h4>"Flower power never goes out of style."</h4>
+                    <p>₹2800</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Wrap" data-price="1800">
+                    <img src="https://m.media-amazon.com/images/I/71eT+xEeniL._AC_UL1500_.jpg" alt="Wrap dress">
+                    <h3>(WRAP DRESS)</h3>
+                    <h4>"Dress to impress, even if you are staying in."</h4>
+                    <p>₹1800</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Formal " data-price="1500">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/28997482/2024/4/17/8e0aa886-e189-467f-81ef-83d79b2e589a1713336006842AthenaImmutableScubaFormalSheathDress1.jpg" alt="Formal Dress">
+                    <h3>(FORMAL DRESS)</h3>
+                    <h4>"Every girl needs that one perfect little black dress."</h4>
+                    <p>₹1500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Midi" data-price="800">
+                    <img src="https://www.alamodelabel.in/cdn/shop/files/6F02F124-7784-4F91-9D1B-ACB58D4958A0.jpg?v=1749207239" alt="Midi Dress">
+                    <h3>(MIDI DRESS)</h3>
+                    <h4>"Dressed in dreams and sequins."</h4>
+                    <p>₹800</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Lace" data-price="3000">
+                    <img src="https://www.alamodelabel.in/cdn/shop/files/IMG-20250702-WA0067.jpg?v=1751622936" alt="Lace Dress">
+                    <h3>(LACE DRESS)</h3>
+                    <h4>"Where fashion meets fantasy."</h4>
+                    <p>₹3000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Party" data-price="5000">
+                    <img src="https://img105.savana.com/goods-pic/91079b3d1adc4289a877656560f6eaa6UR_w540_h720_q85.webp" alt="Party Dress">
+                    <h3>(PARTY DRESS)</h3>
+                    <h4>"This dress makes me feel like a fairytale."</h4>
+                    <p>₹5000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+             <h2>Get In Touch</h2>
+             <p>For inquiries or private viewings, please contact our concierge.</p>
+             <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+             </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FASHION. All Rights Reserved. | A Symbol of Fashion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
